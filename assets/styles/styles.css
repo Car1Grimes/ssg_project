@@ -9,4 +9,185 @@ html {
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 50%, #ffffff 100%);
+
+}
+
+.header {
+    min-height: 100vh;
+}
+
+.container {
+    width: 85%;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------- HEADER ----------------------------------------------------------- */
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 8px;
+}
+/* -------------------------------------------------------- Logo ----------------------------------------------------------- */
+.logo {
+    display: flex;
+    flex-grow: 1;
+}
+
+.logo__slogan {
+    display: block;
+}
+/* -------------------------------------------------------- Navbar ----------------------------------------------------------- */
+.navbar {
+    flex-grow: 2;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__link--active,
+.nav__link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 12px 20px;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+    font-weight: 500;
+}
+
+.nav__link--active {
+    position: relative;
+    text-shadow: 1px 0 0 #000;
+}
+
+.nav__link--active::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: greenyellow;
+}
+
+.nav__link:hover {
+    color: #C850C0;
+    text-shadow: 0px 0px 4px currentColor;
+    transition: 0.4s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    background: #1e81b0;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 200px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #488eae;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.52);
+-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.52);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.52);
+    transition: 0.3s;
+}
+
+/* -------------------------------------------------------- Hero ----------------------------------------------------------- */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 20px 30px;
+    height: calc(100vh - 180px);
+}
+
+.hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-illustration1,
+.hero-illustration2,
+.hero-illustration3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    min-width: 310px;
+}
+
+.hero-illustration2 {
+    justify-content: flex-end;
+}
+
+.hero-illustration-table,
+.hero-illustration-working,
+.hero-illustration-messy {
+    width: 300px;
+    height: 405px;
+    border-radius: 10%;
+    position: absolute;
+}
+
+.hero-illustration-table {
+    top: 0;
+    left: 0;
+}
+
+.hero-illustration-working {
+    bottom: 0;
+    left: 0;
+}
+
+.hero-illustration-messy {
+    bottom: 0;
+    right: 0;
+}
+
+.hero-illustration__text {
+    padding: 20px;
+}
+
+.hero-illustration__desc {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgba(99, 36, 15, 0.579);
+    text-align: center;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px 50px 100px;
+
+}
+
+.hero-right__text {
+    text-align: center;
+    color: rgba(99, 36, 15, 0.579);
+    font-size: 5rem;
+    line-height: 2em;
+    font-weight: 600;
 }
