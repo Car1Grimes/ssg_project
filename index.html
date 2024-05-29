@@ -8,36 +8,35 @@
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
-    <div class="container">
-    <header class="header">
-        
-            <div class="header-top">
-                <div class="logo">
-                    <div class="logo__brand">
-                        <img src="" alt="">
-                    </div>
-                    <div class="logo__text">
-                        <span class="logo__slogan">Old But Gold</span>
-                        <span class="logo__slogan">Old Stuff Exchange For FPTers</span>
-                    </div>
-                </div>
-                <nav class="navbar">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#!" class="nav__link--active">Storage</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#!" class="nav__link">Event</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#!" class="nav__link">About Us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#!" class="nav__link">Contact</a>
-                        </li>
-                </nav>
-                <a href="#!" class="btn btn-booking">Book Now!</a>
+    <div class="header-top header-top--sticky">
+        <div class="logo">
+            <div class="logo__brand">
+                <img src="" alt="">
             </div>
+            <div class="logo__text">
+                <span class="logo__slogan">Old But Gold</span>
+                <span class="logo__slogan">Old Stuff Exchange For FPTers</span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link--active">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./storage.html" class="nav__link">Storage</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./event.html" class="nav__link">Event</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./about-us.html" class="nav__link">About Us</a>
+                </li>
+        </nav>
+        <a href="#!" class="btn btn-booking">Book Now!</a>
+    </div>
+    <div class="container">
+        <header class="header">
             <div class="hero">
                 <div class="hero-left">
                     <div class="hero-illustration1">
@@ -70,10 +69,26 @@
                 </div>
                 <div class="hero-right">
                     <p class="hero-right__text">Let your old friends become useful again...</p>
-                    <a href="#!" class="btn">More details</a>
+                    <a href="./event.html" class="btn">More details</a>
                 </div>
             </div>
         </header>
+        <div class="co-op">
+            <img src="./assets/images/Logo Đại học FPT.png" alt="FPT University" class="co-op__logo">
+            <img src="./assets/images/fptu_softskills.jpeg" alt="FPT HCM Softskills Department" class="co-op__logo">
         </div>
+    </div>
+    <div class="survey">
+        <p class="survey__title">It would be sweet if you do this little user survey ^^</p>
+        <div class="survey-wrapper">
+                <div class="container">
+                <div class="survey-body">
+                    <p class="survey__desc">We just wanna know if you are interested in this event...</p>
+                    <img src="./assets/images/qr.svg" alt="QR-Code" class="qr-code">
+                    <img src="./assets/images/qr-code.png" alt="QR-Code" class="scan-img">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
