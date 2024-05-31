@@ -6,6 +6,10 @@
     <title>Old Stuff Exchange</title>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.2-web/css/all.min.css"
+    />
 </head>
 <body>
     <div class="header-top header-top--sticky">
@@ -18,6 +22,9 @@
                 <span class="logo__slogan">Old Stuff Exchange For FPTers</span>
             </div>
         </div>
+        <a href="#!" onclick="openNav()" class="sideNav__btn">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         <nav class="navbar">
             <ul class="nav__list">
                 <li class="nav__item">
@@ -29,12 +36,17 @@
                 <li class="nav__item">
                     <a href="#" class="nav__link--active">Event</a>
                 </li>
-                <li class="nav__item">
-                    <a href="./about-us.html" class="nav__link">About Us</a>
-                </li>
         </nav>
         <a href="https://forms.gle/8yqS4Rw5Az7aVuEY7" target="_blank" rel="noreferrer" class="btn btn-booking">Book Now!</a>
     </div>
+    <div id="mySidenav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;
+        </a>
+        <a href="./index.html">Home</a>
+        <a href="./storage.html">Storage</a>
+        <a href="./event.html">Event</a>
+      </div>
     <div class="container">
         <div class="event">
             <h1 class="event__heading">Tất cả những điều bạn cần biết về OBG</h1>
@@ -112,5 +124,6 @@
             </section>
         </div>
     </div>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

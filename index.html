@@ -1,94 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Old Stuff Exchange</title>
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.2-web/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="header-top header-top--sticky">
-        <div class="logo">
-            <div class="logo__brand">
-                <img src="" alt="">
-            </div>
-            <div class="logo__text">
-                <span class="logo__slogan">Old But Gold</span>
-                <span class="logo__slogan">Old Stuff Exchange For FPTers</span>
-            </div>
+      <div class="logo">
+        <div class="logo__brand">
+          <img src="" alt="" />
         </div>
-        <nav class="navbar">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link--active">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./storage.html" class="nav__link">Storage</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./event.html" class="nav__link">Event</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./about-us.html" class="nav__link">About Us</a>
-                </li>
-        </nav>
-        <a href="https://forms.gle/8yqS4Rw5Az7aVuEY7" target="_blank" rel="noreferrer" class="btn btn-booking">Book Now!</a>
+        <div class="logo__text">
+          <span class="logo__slogan">Old But Gold</span>
+          <span class="logo__slogan">Old Stuff Exchange For FPTers</span>
+        </div>
+      </div>
+      <a href="#!" onclick="openNav()" class="sideNav__btn">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <nav class="navbar">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link--active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./storage.html" class="nav__link">Storage</a>
+          </li>
+          <li class="nav__item">
+            <a href="./event.html" class="nav__link">Event</a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        href="https://forms.gle/8yqS4Rw5Az7aVuEY7"
+        target="_blank"
+        rel="noreferrer"
+        class="btn btn-booking"
+        >Book Now!</a
+      >
+    </div>
+    <div id="mySidenav" class="sideNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;
+      </a>
+      <a href="#">Home</a>
+      <a href="./storage.html">Storage</a>
+      <a href="./event.html">Event</a>
     </div>
     <div class="container">
-        <header class="header">
-            <div class="hero">
-                <div class="hero-left">
-                    <div class="hero-illustration1">
-                        <div class="hero-illustration__text">
-                            <p class="hero-illustration__desc">To make your</p>
-                            <p class="hero-illustration__desc">near and dear</p>
-                            <p class="hero-illustration__desc">surrounding</p>
-                            <p class="hero-illustration__desc" style="font-weight: 700; font-size: 4rem">cleaner</p>
-                        </div>
-                        <img src="./assets/images/man-working.jpeg" alt="Man-working" class="hero-illustration-working">
-                    </div>
-                    <div class="hero-illustration2">
-                        <img src="./assets/images/studying-atmosphere .jpeg" alt="Studying atmosphere" class="hero-illustration-table">
-                        <div class="hero-illustration__text">
-                            <p class="hero-illustration__desc">Getting</p>
-                            <p class="hero-illustration__desc">rid of</p>
-                            <p class="hero-illustration__desc" style="font-weight: 700; font-size: 4rem">unnecessary</p>
-                            <p class="hero-illustration__desc">stuff...</p>
-                        </div>
-                    </div>
-                    <div class="hero-illustration3">
-                        <div class="hero-illustration__text">
-                            <p class="hero-illustration__desc">And</p>
-                            <p class="hero-illustration__desc">maximize</p>
-                            <p class="hero-illustration__desc">your</p>
-                            <p class="hero-illustration__desc" style="font-weight: 700; font-size: 4rem">productivity</p>
-                        </div>
-                        <img src="./assets/images/messy-table.jpeg" alt="Messy table" class="hero-illustration-messy">
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <p class="hero-right__text">Let your old friends become useful again...</p>
-                    <a href="./event.html" class="btn">More details</a>
-                </div>
+      <header class="header">
+        <div class="hero">
+          <div class="hero-left">
+            <div class="hero-illustration1">
+              <div class="hero-illustration__text">
+                <p class="hero-illustration__desc">To make your</p>
+                <p class="hero-illustration__desc">near and dear</p>
+                <p class="hero-illustration__desc">surrounding</p>
+                <p
+                  class="hero-illustration__desc"
+                  style="font-weight: 700; font-size: 4rem"
+                >
+                  cleaner
+                </p>
+              </div>
+              <img
+                src="./assets/images/man-working.jpeg"
+                alt="Man-working"
+                class="hero-illustration-working"
+              />
             </div>
-        </header>
-        <div class="co-op">
-            <img src="./assets/images/Logo Đại học FPT.png" alt="FPT University" class="co-op__logo">
-            <img src="./assets/images/fptu_softskills.jpeg" alt="FPT HCM Softskills Department" class="co-op__logo">
+            <div class="hero-illustration2">
+              <img
+                src="./assets/images/studying-atmosphere .jpeg"
+                alt="Studying atmosphere"
+                class="hero-illustration-table"
+              />
+              <div class="hero-illustration__text">
+                <p class="hero-illustration__desc">Getting</p>
+                <p class="hero-illustration__desc">rid of</p>
+                <p
+                  class="hero-illustration__desc"
+                  style="font-weight: 700; font-size: 4rem"
+                >
+                  unnecessary
+                </p>
+                <p class="hero-illustration__desc">stuff...</p>
+              </div>
+            </div>
+            <div class="hero-illustration3">
+              <div class="hero-illustration__text">
+                <p class="hero-illustration__desc">And</p>
+                <p class="hero-illustration__desc">maximize</p>
+                <p class="hero-illustration__desc">your</p>
+                <p
+                  class="hero-illustration__desc"
+                  style="font-weight: 700; font-size: 4rem"
+                >
+                  productivity
+                </p>
+              </div>
+              <img
+                src="./assets/images/messy-table.jpeg"
+                alt="Messy table"
+                class="hero-illustration-messy"
+              />
+            </div>
+          </div>
+          <div class="hero-right">
+            <p class="hero-right__text">
+              Let your old friends become useful again...
+            </p>
+            <a href="./event.html" class="btn">More details</a>
+          </div>
         </div>
+      </header>
+      <div class="co-op">
+        <img
+          src="./assets/images/Logo Đại học FPT.png"
+          alt="FPT University"
+          class="co-op__logo"
+        />
+        <img
+          src="./assets/images/fptu_softskills.jpeg"
+          alt="FPT HCM Softskills Department"
+          class="co-op__logo"
+        />
+      </div>
     </div>
     <div class="survey">
-        <p class="survey__title">It would be sweet if you do this little user survey ^^</p>
-        <div class="survey-wrapper">
-                <div class="container">
-                <div class="survey-body">
-                    <p class="survey__desc">We just wanna know if you are interested in this event...</p>
-                    <img src="./assets/images/qr.svg" alt="QR-Code" class="qr-code">
-                    <img src="./assets/images/qr-code.png" alt="QR-Code" class="scan-img">
-                </div>
-            </div>
+      <p class="survey__title">
+        It would be sweet if you do this little user survey ^^
+      </p>
+      <div class="survey-wrapper">
+        <div class="container">
+          <div class="survey-body">
+            <p class="survey__desc">
+              We just wanna know if you are interested in this event...
+            </p>
+            <img src="./assets/images/qr.svg" alt="QR-Code" class="qr-code" />
+            <img
+              src="./assets/images/qr-code.png"
+              alt="QR-Code"
+              class="scan-img"
+            />
+          </div>
         </div>
+      </div>
     </div>
-</body>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>

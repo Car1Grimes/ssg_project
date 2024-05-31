@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.2-web/css/all.min.css"
+    />
 </head>
 <body style="min-height: 100vh">
     <div class="header-top header-top--sticky">
@@ -21,6 +25,9 @@
                 <span class="logo__slogan">Old Stuff Exchange For FPTers</span>
             </div>
         </div>
+        <a href="#!" onclick="openNav()" class="sideNav__btn">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         <nav class="navbar">
             <ul class="nav__list">
                 <li class="nav__item">
@@ -32,12 +39,17 @@
                 <li class="nav__item">
                     <a href="./event.html" class="nav__link">Event</a>
                 </li>
-                <li class="nav__item">
-                    <a href="./about-us.html" class="nav__link">About Us</a>
-                </li>
         </nav>
         <a href="https://forms.gle/8yqS4Rw5Az7aVuEY7" target="_blank" rel="noreferrer" class="btn btn-booking">Book Now!</a>
     </div>
+    <div id="mySidenav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;
+        </a>
+        <a href="./index.html">Home</a>
+        <a href="./storage.html">Storage</a>
+        <a href="./event.html">Event</a>
+      </div>
     <div class="container">
         <div class="storage">
             <h1 class="storage-title">Storage</h1>
