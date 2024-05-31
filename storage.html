@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Old Stuff Exchange</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
-<body>
+<body style="min-height: 100vh">
     <div class="header-top header-top--sticky">
         <div class="logo">
             <div class="logo__brand">
@@ -33,10 +36,180 @@
                     <a href="./about-us.html" class="nav__link">About Us</a>
                 </li>
         </nav>
-        <a href="https://forms.gle/8yqS4Rw5Az7aVuEY7" target="_blank" class="btn btn-booking">Book Now!</a>
+        <a href="https://forms.gle/8yqS4Rw5Az7aVuEY7" target="_blank" rel="noreferrer" class="btn btn-booking">Book Now!</a>
     </div>
     <div class="container">
-        
+        <div class="storage">
+            <h1 class="storage-title">Storage</h1>
+            <div class="storage__tabs">
+                <div class="tab-1">
+                    <span class="storage__category">Books, Bags</span>
+                </div>
+                <div class="tab-2">
+                    <span class="storage__category">Clothes, Shoes</span>
+                </div>
+                <div class="tab-3">
+                    <span class="storage__category">Sports Facilities</span>
+                </div>
+                <div class="tab-4">
+                    <span class="storage__category">Others</span>
+                </div>
+            </div>
+            <div class="storage__items">
+                <!-- Books, Bags Items -->
+                
+                <div class="storage__item" data-category="Books, Bags">
+                    <div class="item__background" style="background-image: url(./assets/images/messy-table.jpeg);"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">JavaScript: Comprehensive Guide</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1234</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Books, Bags">
+                    <div class="item__background" style="background-image: url(./assets/images/studying-atmosphere\ .jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae?</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1235</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Books, Bags">
+                    <div class="item__background" style="background-image: url(./assets/images/man-working.jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Traveling Bag</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1236</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--booked">Booked</p>
+                    </div>
+                </div>
+
+                <!-- Clothes, Shoes Items -->
+                <div class="storage__item" data-category="Clothes, Shoes">
+                    <div class="item__background" style="background-image: url(./assets/images/studying-atmosphere\ .jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae?</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1235</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Clothes, Shoes">
+                    <div class="item__background" style="background-image: url(./assets/images/man-working.jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Traveling Bag</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1236</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--booked">Booked</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Clothes, Shoes">
+                    <div class="item__background" style="background-image: url(./assets/images/studying-atmosphere\ .jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae?</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1235</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Clothes, Shoes">
+                    <div class="item__background" style="background-image: url(./assets/images/man-working.jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Traveling Bag</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1236</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--booked">Booked</p>
+                    </div>
+                </div>
+
+                <!-- Sports Facilities Items -->
+                <div class="storage__item" data-category="Sports Facilities">
+                    <div class="item__background" style="background-image: url(./assets/images/studying-atmosphere\ .jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae?</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1235</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Sports Facilities">
+                    <div class="item__background" style="background-image: url(./assets/images/man-working.jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Traveling Bag</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1236</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--booked">Booked</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Sports Facilities">
+                    <div class="item__background" style="background-image: url(./assets/images/man-working.jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Traveling Bag</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1236</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--booked">Booked</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Sports Facilities">
+                    <div class="item__background" style="background-image: url(./assets/images/studying-atmosphere\ .jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae?</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1235</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+
+                <!-- Others Items -->
+                <div class="storage__item" data-category="Others">
+                    <div class="item__background" style="background-image: url(./assets/images/studying-atmosphere\ .jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae?</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1235</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+                <div class="storage__item" data-category="Others">
+                    <div class="item__background" style="background-image: url(./assets/images/studying-atmosphere\ .jpeg)"></div>
+                    <div class="item__info">
+                        <h2 class="item__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, recusandae?</h2>
+                        <div class="item__dist">
+                            <span class="item__id">#BB1235</span>
+                            <span class="item__price">3 points</span>
+                        </div>
+                        <p class="item__status item__status--available">Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
