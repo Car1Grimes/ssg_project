@@ -543,7 +543,8 @@ body {
 }
 
 .item__background {
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   min-width: 300px;
   max-width: 100%;
   min-height: 200px;
