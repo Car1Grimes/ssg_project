@@ -607,6 +607,10 @@ body {
   line-height: 1.5em;
 }
 
+.event__section {
+  line-height: 1.5em;
+}
+
 .event__content-list {
   margin: 0 auto;
 }
@@ -616,20 +620,81 @@ body {
   color: #000;
 }
 
+.event__sub-item,
 .event__heading,
 .event__item {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
-.restriction__wrapper {
-  min-height: 100px;
-  background-image: url(../images/restriction.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 250px;
+.event__sub-item {
+  display: inline-block;
+  font-size: 20px;
+  text-align: start;
+  color: #fff;
+  padding: 2px 3px;
+  background: var(--primary-color);
+  border-radius: 8px;
+}
+
+.event__text strong {
+  font-weight: 600;
+  color: #fff;
+  background: red;
+  padding: 2px 3px;
+  border-radius: 8px;
+}
+
+.stuff__category,
+.warning__item {
+  padding: 15px 8px;
+}
+
+.stuff__category strong,
+.warning,
+.user__code,
+.product__code {
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary-color-2);
+  padding: 2px 3px;
+  border-radius: 8px;
+}
+
+.warning {
+  background: red;
+}
+
+.user__code {
+  background: red;
+}
+
+.product__code {
+  background: var(--primary-color-2);
+}
+
+.fanpage-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.fanpage-btn {
+  display: inline-block;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  background: #1e81b0;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 150px;
+  margin: 20px auto 50px;
 }
 
 @media screen and (min-width: 768px) {
