@@ -75,6 +75,26 @@ body {
   display: none;
 }
 
+.btn-bottom__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+}
+
+.booking-btn--present {
+  display: inline-block;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  background: #1e81b0;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 150px;
+}
+
 .sideNav__btn {
   display: inline-block;
   font-size: 30px;
@@ -225,6 +245,10 @@ body {
     font-weight: 600;
     text-align: center;
     max-width: 150px;
+  }
+
+  .booking-btn--present {
+    display: none;
   }
 
   .sideNav__btn {
@@ -438,7 +462,7 @@ body {
 /* -------------------------------------------------------- Storage ----------------------------------------------------------- */
 
 .storage {
-  margin-top: 125px;
+  margin: 125px 0;
 }
 
 .storage-title {
