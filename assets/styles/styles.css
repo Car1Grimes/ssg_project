@@ -565,13 +565,24 @@ body {
   position: relative;
   border: 2px solid gold;
 }
-
+/* 
 .item__background {
   background-size: contain;
   background-repeat: no-repeat;
   min-width: 300px;
   max-width: 100%;
   min-height: 200px;
+} */
+
+.item__background {
+  display: flex;
+  justify-content: center;
+}
+
+.item__background img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
 }
 
 .item__name {
@@ -587,7 +598,6 @@ body {
   justify-content: space-between;
   padding: 10px 5px;
   margin-top: 5px;
-  height: calc(100% - 200px);
 }
 
 .item__status {
